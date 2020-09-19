@@ -1,4 +1,9 @@
 <application>
+  <component name="GithubAccounts">
+    <account id="753c6e83-f267-47cb-9544-10a268c352ce" name="RDromando">
+      <server host="github.com" />
+    </account>
+  </component>
   <component name="GithubSettings">
     <option name="LOGIN" value="roman.doric" />
     <option name="HOST" value="https://roman.doric@git.morosystems.cz/scm/ebay/sparcwebtest.git" />
