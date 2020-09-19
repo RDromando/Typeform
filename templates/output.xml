@@ -1,0 +1,12 @@
+<templateSet group="output">
+  <template name="psv" value="public static void () {&#10;    &#10;}" description="public static void" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="psi" value="public static int () {&#10;    &#10;}" description="public static int" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>
