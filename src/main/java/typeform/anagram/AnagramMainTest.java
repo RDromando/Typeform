@@ -1,0 +1,56 @@
+package typeform.anagram;
+
+import java.util.Arrays;
+
+public class AnagramMainTest {
+
+
+
+    public static void main(String[] args) {
+
+        System.out.println(isAnagram("the morse code", "here come dots"));
+
+    }
+
+    public static boolean isAnagram(String firstWord, String secondWord) {
+
+
+        int length1 = firstWord.length();
+        int length2 = secondWord.length();
+
+        if (length1 != length2) {
+            return false;
+        }
+
+        firstWord = firstWord.toLowerCase();
+        secondWord = secondWord.toLowerCase();
+
+        char[] firstWordArray = firstWord.toCharArray();
+        char[] secondWordArray = secondWord.toCharArray();
+
+
+        Arrays.sort(firstWordArray);
+        Arrays.sort(secondWordArray);
+
+        String firstNewString = new String(firstWordArray);
+        String secondNewString = new String(secondWordArray);
+
+//        StringBuilder sortedString1 = new StringBuilder("");
+//        StringBuilder sortedString2 = new StringBuilder("");
+//
+//        sortedString1.append(firstWordArray);
+//        sortedString2.append(secondWordArray);
+//
+//        firstWord=sortedString1.toString();
+//        secondWord=sortedString2.toString();
+
+        System.out.println(firstNewString);
+        System.out.println(secondNewString);
+
+        if (firstNewString.equals(secondNewString)) {
+            return true;
+        }
+        return false;
+
+    }
+}
