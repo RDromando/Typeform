@@ -1,6 +1,9 @@
 package typeform.anagram;
 
+import org.apache.commons.lang3.ArrayUtils;
+
 import java.util.Arrays;
+import java.util.Collections;
 
 public class AnagramMainTest2 {
 
@@ -15,8 +18,8 @@ public class AnagramMainTest2 {
     public static boolean isAnagram(String firstWord, String secondWord) {
 
         //deleting empty spaces
-       firstWord=firstWord.replaceAll("\\s", "");
-       secondWord=secondWord.replaceAll("\\s", "");
+       firstWord = firstWord.replaceAll("\\s", "");
+       secondWord = secondWord.replaceAll("\\s", "");
 
         int length1 = firstWord.length();
         int length2 = secondWord.length();
@@ -34,8 +37,20 @@ public class AnagramMainTest2 {
         Arrays.sort(firstWordArray);
         Arrays.sort(secondWordArray);
 
+//        ArrayUtils.reverse(firstWordArray);
+//        ArrayUtils.reverse(secondWordArray);
+
         System.out.println(firstWordArray);
         System.out.println(secondWordArray);
+
+//        StringBuilder sortedString1 = new StringBuilder("");
+//        StringBuilder sortedString2 = new StringBuilder("");
+//
+//        sortedString1.append(firstWordArray);
+//        sortedString2.append(secondWordArray);
+//
+//        firstWord=sortedString1.toString();
+//        secondWord=sortedString2.toString();
 
         if (Arrays.equals(firstWordArray, secondWordArray)) {
             return true;
