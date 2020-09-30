@@ -63,7 +63,7 @@ public class SeleniumBase {
      */
     public void sWait(String selector) {
         WebDriverWait wait = new WebDriverWait(driver, 10);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(selector)));
+     //   wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(selector)));
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(selector)));
     }
 

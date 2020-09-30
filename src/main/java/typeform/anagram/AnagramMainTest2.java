@@ -43,14 +43,6 @@ public class AnagramMainTest2 {
         System.out.println(firstWordArray);
         System.out.println(secondWordArray);
 
-//        StringBuilder sortedString1 = new StringBuilder("");
-//        StringBuilder sortedString2 = new StringBuilder("");
-//
-//        sortedString1.append(firstWordArray);
-//        sortedString2.append(secondWordArray);
-//
-//        firstWord=sortedString1.toString();
-//        secondWord=sortedString2.toString();
 
         if (Arrays.equals(firstWordArray, secondWordArray)) {
             return true;
