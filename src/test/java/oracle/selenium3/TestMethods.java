@@ -1,4 +1,4 @@
-package typeform.selenium2;
+package oracle.selenium3;
 
 
 import org.openqa.selenium.By;
